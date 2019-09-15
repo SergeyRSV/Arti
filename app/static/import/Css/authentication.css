@@ -1,0 +1,71 @@
+@font-face {
+	font-family: "Roboto"; 
+	src: url("../Fonts/Roboto.woff2");  
+}
+
+@font-face {
+	font-family: "Roboto-light"; 
+	src: url("../Fonts/Robotolight.woff2"); 
+}
+
+@font-face {
+	font-family: "Roboto-bold"; 
+	src: url("../Fonts/Robotobold.woff2");  
+}
+		
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Roboto;
+	background-color: #f1f1f1;
+}
+		
+*{
+	box-sizing: border-box;
+}
+
+.logo{
+	margin: 20px;
+}
+
+.owner{
+	padding: 0;
+	margin: 0;
+	height: 100vh;
+  	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+		}
+
+.authentication{
+	height: 300px;
+	width: 500px;
+	display: flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	background-color: white;
+	color: #8d8983;
+	font-family: Roboto-bold;
+	font-size: 16px;
+	-webkit-box-shadow: -12px 10px 18px 0px rgba(0,0,0,0.31);
+	-moz-box-shadow: -12px 10px 18px 0px rgba(0,0,0,0.31);
+	box-shadow: -12px 10px 18px 0px rgba(0,0,0,0.31);
+	margin: 20px;
+}
+		
+.form{
+	width: 400px;
+}
+
+.login{
+	background-color: #f1f1f1;
+	border: 2px solid #dddddd;
+}
+
+.password{
+	background-color: #f1f1f1;
+	border: 2px solid #dddddd;
+}

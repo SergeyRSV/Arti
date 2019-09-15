@@ -1,0 +1,545 @@
+@font-face {
+	font-family: "Roboto"; 
+	src: url("../Fonts/Roboto.woff2");  
+}
+
+@font-face {
+	font-family: "Roboto-light"; 
+	src: url("../Fonts/Robotolight.woff2"); 
+}
+
+@font-face {
+	font-family: "Roboto-bold"; 
+	src: url("../Fonts/Robotobold.woff2");  
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Roboto;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.owner{
+	padding: 0;
+	margin: 0;
+	background-color: white;
+}
+
+.main{
+	padding: 0;
+	margin: 0;
+	overflow: auto;
+	height: 100vh;
+}
+
+.project{
+	background-color: #007BFF;
+	height: 90px;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	font-size: 42px;
+	line-height: 1;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.wrapperInfo{
+	display: flex;
+	flex-wrap: nowrap;
+	width: 400px;
+	z-index: 1060;
+}
+
+.project-name{
+	font-family: Roboto-bold;
+	font-size: 42px;
+	text-align: center;
+}
+
+.blockInfo{
+	background: #0261C7;
+	width: 100%;
+	color: white;
+	font-family: Roboto-bold;
+	font-size: 26px;
+	justify-content: center;
+	align-items: center;
+	transition: 0.3s;
+	transform: translateX(-400px);
+	overflow: hidden;
+	display: flex;
+}
+
+
+/* .blockInfoActive{
+	display: flex;
+	background: #007BFF;
+} */
+
+.info{
+	display: flex;
+}
+
+.buttonBlockFirst{
+	padding: 0;
+	height: 90px;
+	width: 90px;
+	background-color: #007BFF;
+	border:0;
+	z-index: 1100;
+	transition: 0.4s;
+	transition-timing-function: ease;
+}
+
+.buttonBlockFirst:hover{
+	background: #0261C7;
+}
+
+	/* бургер */
+	.navMenu {
+		display: none;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	.helpMenu {
+		display: flex;
+		width: 90px;
+		height: 90px;
+		position: relative;
+		align-self: center;
+		justify-content: center;
+	}
+
+	.activeHelpMenu{
+		background: #0261C7;
+	}
+
+	.burgerLine {
+		position: absolute;
+		top: 35px;
+		width: 40px;
+		height: 3px;
+		background: white;
+		transition: 0.3s all;
+	}
+
+	.helpMenu:hover>div {
+
+	}
+
+	.helpMenu>div:nth-child(2) {
+		top: 45px;
+	}
+
+	.helpMenu>div:nth-child(3) {
+		top: 45px;
+	}
+
+	.helpMenu>div:nth-child(4) {
+		top: 55px;
+	}
+
+	.activeHelpMenu>div:nth-child(1),
+	.activeHelpMenu>div:nth-child(4) {
+		opacity: 0;
+	}
+
+	.activeHelpMenu>div:nth-child(2) {
+		transform: rotate(45deg);
+	}
+
+	.activeHelpMenu>div:nth-child(3) {
+		transform: rotate(-45deg);
+	}
+
+	/* конец бургера */
+
+	.menu-drop-first{
+		margin: 0;
+		padding: 0;
+		background-color: white;
+		height: calc(100vh - 90px);
+		width: 400px;
+		transform: none !important;
+		top: 90px !important;
+		z-index: 1050;
+		display: flex;
+		flex-wrap: wrap;
+		position: absolute;
+		left: 0;
+		transition: opacity 0.2s linear, margin-top 0.2s step-start, z-index 0.2s step-start;
+		opacity: 0;
+		margin-top: -100vh;
+	}
+
+	.menu-drop-first-active{
+    	opacity: 1;
+    	margin: 0;
+  	}
+
+/* Начало настройки левого меню */
+.block-projects{
+	height: 50%;
+	padding: 5px;
+	width: 100%;
+}
+
+.your-projects, .members{
+	font-size: 26px;
+	font-family: Roboto-bold;
+	max-height: 25px;
+	color: black;
+}
+
+.list-projects, .list-members{
+	height: 90%;
+	overflow-y: auto;
+}
+/* Настройка блока с участниками */
+.project-partner{
+	height: 50%;
+	padding: 5px;
+	width: 100%;
+}
+
+
+	a.green{
+		border-radius: 4px;
+		-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+		-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+		color: white;
+		display: block;
+		widows: 100px;
+		text-align: center;
+		font-family: Roboto-bold;
+		font-size: 16px;
+		padding: 12px 20px;
+		margin: 15px auto;
+		text-decoration: none;
+		background-color: #007BFF;
+	}
+
+	a.green:hover {
+		background-color: #0261C7;
+	}
+
+	.rounded {
+		counter-reset: li; 
+		list-style: none; 
+		font-size: 20px;
+		font-family: Roboto;
+		padding-left: 25px;
+	}
+
+	.rounded a {
+		position: relative;
+		display: block;
+		padding: .4em .4em .4em 1em;
+		margin: .5em 0;
+		background: #007BFF;
+		color: #fff;
+		text-decoration: none;
+		border-radius: .3em;
+		transition: .3s ease-out;
+	}
+
+	.rounded a:hover {background: #0261C7;}
+
+	.rounded a:before {
+		content: counter(li);
+		counter-increment: li;
+		position: absolute;
+		left: -1.3em;
+		top: 62%;
+		margin-top: -1.3em;
+		background: #007BFF;
+		height: 2.1em;
+		width: 2.1em;
+		display: flex;
+		justify-content: center;
+		align-items:center;
+		border: .2em solid white;
+		text-align: center;
+		border-radius: 2em;
+		transition: all .3s ease-out;
+	}
+
+	.rounded a:hover:before{
+		background: #0261C7;
+	}
+
+	.account-user{
+		border-radius: 5px;
+		margin: 5px 0;
+		font-family: Roboto;
+		font-size: 20px;
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: center;
+	}
+
+	.photo-user{
+		width: 60px;
+		height: 60px;
+		margin: 10px;
+		border-radius: 50%;
+	}
+
+	.user-information{
+		font-family: Roboto-bold;
+		margin: 0;
+		font-size: 24px;
+		max-height: 40px;
+		width: auto;
+		color: black;
+	}
+
+
+	.user-position{
+		font-family: Roboto-bold; 
+		font-size: 16px; 
+		color: #007BFF;
+	}
+
+	.display-unit{
+		width: 100%;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	
+	.owner-block{
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		width: 100%;
+		height: 600px;
+		flex-wrap: wrap;
+		margin-top: 15px;
+	}
+
+	.block-of-information{
+		padding: 10px 25px;
+		margin: 20px 0;
+		font-size: 20px;
+		font-family: serif;
+		background-color: white;
+		height: 470px;
+		border-radius: 10px;
+		min-width: 550px;
+		width: 550px;
+		box-shadow:0px 1px 6px 2px rgba(0,0,0,0.67);
+		-webkit-box-shadow:0px 1px 6px 2px rgba(0,0,0,0.67);
+		-moz-box-shadow:0px 1px 6px 2px rgba(0,0,0,0.67);
+	}
+	
+	.wrapper, .wrapper-time{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.name-block-one{
+		font-family: Roboto-bold;
+		font-size: 24px;
+		margin: 5px 0;
+	}
+	
+	textarea{
+		resize: none;
+	}
+
+	.label-message, .lebel-time{
+		width: 100%;
+		font-family: Roboto-bold;
+		font-size: 20px;
+		margin: 7px 0;
+	}
+
+	.message{
+		height: 250px;
+		width: 500px;
+		display: flex;
+		align-self: flex-start;
+		margin: 0;
+	}
+
+	.time-hour, .time-min{
+		display: flex;
+		width: 95px;
+		height: 40px;
+		text-align: center;
+	}
+
+	a.green-block{
+		border-radius: 4px;
+		-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+		-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+		color: white;
+		display: flex;
+		text-align: center;
+		font-family: Roboto-bold;
+		font-size: 18px;
+		height: 55px;
+		width: 125px;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
+		background-color: #007BFF;
+		right: 30px;
+		bottom: 30px;
+		position: absolute;
+	}
+	
+	a.green-block:hover{
+		background-color: #0261C7;
+	}
+
+	.knopka{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.data{
+		border-radius: 4px;
+		-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+		-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+		color: black;
+		display: flex;
+		text-align: center;
+		font-family: Roboto-bold;
+		font-size: 18px;
+		height: 100px;
+		width: 250px;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
+		background-color: #64d0c5;
+	}
+
+	.data:hover{
+		background-color: #6FF2E5;
+	}
+
+	.end{
+		margin: 30px 0;
+		height: 75px;
+		background-color: #64d0c5;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: black;
+		font-family: Roboto-bold;
+		font-size: 30px;
+		display:none;
+	}
+
+/* Начало настройки правой кнопки выпадающего меню */
+button:focus{
+	outline: none;
+}
+
+.menu-block-second{
+	border: 0 !important;
+	padding: 0;
+	border-radius: 0;
+	width: 400px;
+	height: 90px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 28px;
+	color: white;
+	background-color: #007BFF;
+}
+
+.menu-block-second:hover{
+	background-color: #0261C7;
+}
+/* Конец настройки правой кнопки выпадающего меню */
+
+/* Начало стрелки */
+i {
+    border: solid white;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 3px;
+    margin: 5px;
+}
+
+.right {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+/* Конец стрелки */
+
+/* Настройки блоков в выпадающем меню */
+
+.dropdown-menu-right{
+	margin: 0;
+	padding: 0;
+	top: -20px !important;
+	border-radius: 5px;
+	box-shadow:0px 1px 6px 2px rgba(0,0,0,0.67);
+	-webkit-box-shadow:0px 1px 6px 2px rgba(0,0,0,0.67);
+	-moz-box-shadow:0px 1px 6px 2px rgba(0,0,0,0.67);
+	z-index: 1110;
+}
+
+/* Начало настройки блока вошедшего пользователя */
+.unit-of-account{
+	height: 90px;
+	padding: 0 15px;
+	margin: 0;
+	background-color: white;
+	align-items: center;
+	display: flex;
+	justify-content: space-around;
+	border-radius: 5px;
+}
+
+.unit-of-account-active{
+	display: flex;
+}
+
+.photo-account{
+	width: 75px;
+	height: 75px;
+	margin: 0;
+	border-radius: 50%;
+}
+
+.user-account{
+	font-family: Roboto-bold;
+	margin: 0;
+	font-size: 24px;
+	width: auto;
+	color: black;
+}
+
+.name-account{
+	margin-bottom: 7px;
+	font-family: Roboto-bold;
+	font-size: 22px;
+}
+
+.user-position-account{
+	font-family: Roboto; 
+	font-size: 14px; 
+	color: #007BFF;
+	margin: 0;
+}
+/* Конец настройки вошедшего пользователя */
+
+/* Конец настроек блоков выпадающего меню */

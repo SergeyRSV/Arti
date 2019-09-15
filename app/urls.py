@@ -1,0 +1,9 @@
+from django.conf.urls import url, include
+from django.urls import path
+
+from . import views
+
+urlpatterns = [
+    path('', views.auth),
+    path('main/', views.main_page),
+]

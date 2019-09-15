@@ -1,0 +1,390 @@
+@media screen and (max-width: 1600px){
+	.menu-drop-first .show, .menu-drop-first, .menu-drop-second, .menu-block-second, .wrapperInfo{
+		width: 400px;
+	}
+
+	.user-account{
+		font-size: 20px;
+	}
+
+	.photo-account{
+		width: 65px;
+		height: 65px;
+	}
+
+	a.green{
+		padding: 10px 18px;
+	}
+
+	.project-name{
+		font-size: 32px;
+	}
+}
+
+@media screen and (max-width: 1366px){
+	
+	.menu-drop-first, .wrapperInfo{
+		width: 300px;
+	}
+
+	.menu-drop-second, .menu-block-second{
+		width: 300px;
+	}
+
+	.unit-of-account, .user-position{
+		font-size: 14px;
+	}
+
+	.user-account{
+		font-size: 16px;
+	}
+
+	.user-position-account{ 
+		font-size: 12px; 
+	}
+
+	.photo-account{
+		width: 55px;
+		height: 55px;
+		margin: 0 10px;
+	}
+
+	a.green{
+		padding: 7px 15px;
+		margin: 0 10px;
+	}
+
+	.your-projects, .members, .blockInfo{
+		font-size: 22px;
+	}
+
+	.photo-user{
+		width: 55px;
+		height: 55px;
+		margin: 7px;
+	}
+
+	.user-information{
+		font-size: 20px;
+	}
+
+	.rounded{
+		font-size: 18px;
+	}
+
+	.rounded a {
+		padding: .3em .3em .3em 1em;
+	}
+
+	.rounded a:before {
+		top: 65%;
+		height: 2em;
+		width: 2em;
+	}
+
+	.project-name{
+		font-size: 28px;
+	}
+	
+	.name-block-one{
+		font-size: 18px;
+	}
+
+	.label-message, .lebel-time{
+		font-size: 16px;
+		margin: 4px 0;
+	}
+
+	.block-of-information{
+		min-width: 450px;
+		width: 450px;
+		height: 325px;
+	}
+
+	.message{
+		height: 150px;
+		width: 400px;
+	}
+
+	a.green-block{
+		height: 45px;
+		width: 100px;
+		font-size: 14px;
+		right: 20px;
+		bottom: 20px;
+	}
+
+	.time-hour, .time-min{
+		width: 85px;
+		height: 40px;
+	}
+}
+
+@media screen and (max-width: 950px){
+	.block-of-information{
+		min-width: 80%;
+		width: 80%;
+		height: 350px;
+	}
+
+	.message{
+		height: 150px;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1280px){
+	
+	.photo-account{
+		display: none;
+	}
+
+	a.green{
+		padding: 7px 15px;
+		margin: 0 5px;
+	}
+
+	.user-account{
+		margin: 0 12px;
+	}
+
+	.name-account{
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-height: 800px){
+	.project, .wrapperInfo{
+		height: 80px;
+	}
+
+	.menu-block-second, .blockInfo{
+		height: 80px;
+		font-size: 20px;
+	}
+
+	.helpMenu, .buttonBlockFirst{
+		height: 80px;
+	}
+
+	.menu-drop-first{
+		height: calc(100vh - 80px);
+		top: 80px !important;
+	}
+
+	.burgerLine {
+		top: 25px;
+	}
+
+	.helpMenu>div:nth-child(2), .helpMenu>div:nth-child(3) {
+		top: 35px;
+	}
+
+	.helpMenu>div:nth-child(4) {
+		top: 45px;
+	}
+
+	.menu-drop-second{
+		top: 80px !important;
+	}
+
+	.user-account{
+		font-size: 18px;
+	}
+
+	.user-position-account{ 
+		font-size: 14px; 
+	}
+}
+
+@media screen and (max-height: 600px){
+	.project, .wrapperInfo{
+		height: 70px;
+	}
+
+	.menu-block-second, .blockInfo{
+		height: 70px;
+		font-size: 18px;
+	}
+
+	.helpMenu, .buttonBlockFirst{
+		height: 70px;
+	}
+
+	.menu-drop-first{
+		height: calc(100vh - 70px);
+		top: 70px !important;
+	}
+
+	.burgerLine {
+		top: 20px;
+	}
+
+	.helpMenu>div:nth-child(2), .helpMenu>div:nth-child(3) {
+		top: 30px;
+	}
+
+	.helpMenu>div:nth-child(4) {
+		top: 40px;
+	}
+
+	.menu-drop-second{
+		top: 70px !important;
+	}
+	
+	.name-account{
+		font-size: 18px;
+	}
+
+}
+
+@media screen and (max-width: 800px){
+	.menu-drop-first, .wrapperInfo{
+		width: 200px;
+	}
+
+	.info{
+		font-size: 20px;
+		font-family: Roboto-bold;
+	}	
+	
+	.menu-drop-second, .menu-block-second{
+		width: 200px;
+	}
+
+	.project-name{
+		font-size: 26px;
+	}
+
+	.lk{
+		font-size: 18px;
+		font-family: Roboto-bold;
+	}
+
+	.right{
+		display: none;
+	}
+
+	.blockInfo{
+		width: 0;
+	}
+
+	.members, .your-projects{
+		font-size: 18px;
+	}
+
+	.rounded, .user-information{
+		font-size: 16px;
+	}
+
+	.user-position{
+		font-size: 10px; 
+	}
+}
+
+/* ----------------------------------------Адаптация под телефоны---------------------------------------- */
+
+@media screen and (max-width: 500px){
+	.project{
+		height: 70px;
+	}
+
+	.lk{
+		display: none;
+	}
+
+	.right{
+		display: block;
+	}
+	
+	.project-name{
+		font-size: 1.5rem;
+	}
+
+	.menu-block-second{
+		width: 50px;
+		height: 70px;
+	}
+	
+	.buttonBlockFirst, .wrapperInfo{
+		width: auto;
+		height: 70px;
+	}
+
+	.blockInfo{
+		width: 0;
+	}
+
+	.menu-drop-first{
+		width: 100%;
+	}
+
+	.unit-of-account{
+		display: block;
+		max-width: 300px;
+		padding: 5px;
+	}
+
+	a.green-block{
+		position: static;
+		margin: 10px auto;
+		width: 150px;
+	}
+
+	.block-of-information{
+		height: auto;
+	}
+
+	.name-block-one{
+		margin: 0 auto;
+	}
+
+	.name-block-one{
+		font-size: 16px;
+		text-align:center;
+	}
+
+	.label-message, .lebel-time{
+		font-size: 12px;
+		text-align: center;
+	}
+
+	.wrapper-time{
+		justify-content: center;
+	}
+
+	.helpMenu{
+		width: 70px;
+		height: 70px;
+	}
+
+	.burgerLine{
+		width: 30px;
+		top: 25px;
+	}
+
+	.helpMenu>div:nth-child(2) {
+		top: 35px;
+	}
+
+	.helpMenu>div:nth-child(3) {
+		top: 35px;
+	}
+
+	.helpMenu>div:nth-child(4) {
+		top: 45px;
+	}
+	
+	.time-hour, .time-min{
+		display: flex;
+		width: 85px;
+		height: 35px;
+		font-size: 14px;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.message:focus{
+		font-size: 14px;
+	}
+}

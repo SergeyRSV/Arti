@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ArtiPM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% load staticfiles %}
+    <link rel="shortcut icon" href="{% static 'import/Images/icon.png' %}" type="fav">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'import/Css/index.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'import/Css/Media.css' %}">
+
+</head>
+
+<body>
+
+<div class="container-fluid owner"> <!-- это главный блок -->
+
+    <div class="col main"> <!-- блок который содержит в себе все блоки -->
+
+        <div class="top-block sticky-top"> <!-- верхний блок -->
+
+            <div class="project"> <!-- блок с выпадающими меню и названием проекта -->
+
+                <div class="wrapperInfo">
+                    <div class="buttonBlockFirst" id="blockNav">
+                        <!-- этот блок отвечает за кнопку, размеры, цвет, hover эффекты -->
+
+                        <div class="btn button-one helpMenu">
+                            <div class="burgerLine first"></div>
+                            <div class="burgerLine second"></div>
+                            <div class="burgerLine third"></div>
+                            <div class="burgerLine fourth"></div>
+                        </div>
+
+
+                        <div class="menu-drop-first" id="dropmenu">
+                            <!-- Это блок отвечающий за контейнер меню выпадающего -->
+
+                            <!-- всё, что есть в выпадающем меню, находится тут -->
+
+                            <div class="block-projects">
+                                <!-- блок ваших проектов, в нём 2 блока, блок под заголовок и блок под скролл -->
+
+                                <div class="your-projects">Ваши проекты</div> <!-- блок-заголовок проектов -->
+
+                                <div class="list-projects">
+                                    <ol class="rounded" id="projects">
+
+                                    </ol>
+                                </div>
+
+                            </div>
+
+                            <div class="project-partner">
+                                <div class="members">Участники проекта</div>
+                                <div class="list-members" id="members">
+
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="blockInfo">
+                        <div class="info">Информация</div>
+                    </div>
+                </div>
+
+                <div class="project-name">
+                    Выберите проект
+                </div>
+
+                <div class="dropdown">
+                    <button type="button" class="menu-block-second" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                        <div class="lk">Личный кабинет</div>
+                        <i class="arrow right"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right align-items-center " aria-labelledby="dropdownMenu2">
+                        <div class="unit-of-account">
+                            <img class="photo-account" src="#" alt="logo">
+                            <div class="media-body badge">
+                                <div class="name-account" id="user">Маргарита Комиссарова</div>
+                                <div class="user-position-account">Java Разработчик</div>
+                            </div>
+                            <div class="unit-botton exit">
+                                <a href="#" class="green">Выйти</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="alert alert-primary end" role="alert">
+            Отправлено
+        </div>
+        <div class="owner-block">
+
+            <div class="col-3 block-of-information">
+                <div class="name-block-one">Проверка наличия протокола Daily meeting</div>
+                <div class="wrapper-message">
+                    <label for="password1" class="label-message">Текст уведомления</label>
+                    <textarea class="message" id="password1" placeholder=""></textarea>
+                </div>
+
+                <div class="wrapper-time">
+                    <label for="time" class="lebel-time">Время отправки</label>
+                    <textarea class="time-hour" id="time" placeholder="Часы"></textarea>
+                    <div style="font-size: 28px;">:</div>
+                    <textarea class="time-min" id="time" placeholder="Минуты"></textarea>
+                </div>
+                <a href="#" class="green-block">Применить</a>
+            </div>
+
+            <div class="col-3 block-of-information">
+                <div class="name-block-one">Проверка наличия протокола Daily meeting</div>
+                <div class="wrapper-message">
+                    <label for="password1" class="label-message">Текст уведомления</label>
+                    <textarea class="message" id="password1" placeholder=""></textarea>
+                </div>
+
+                <div class="wrapper-time">
+                    <label for="time" class="lebel-time">Время отправки</label>
+                    <textarea class="time-hour" id="time" placeholder="Часы"></textarea>
+                    <div style="font-size: 28px;">:</div>
+                    <textarea class="time-min" id="time" placeholder="Минуты"></textarea>
+                </div>
+                <a href="#" class="green-block">Применить</a>
+            </div>
+
+            <div class="col-3 block-of-information">
+                <div class="name-block-one">Проверка наличия протокола Daily meeting</div>
+                <div class="wrapper-message">
+                    <label for="password1" class="label-message">Текст уведомления</label>
+                    <textarea class="message" id="password1" placeholder=""></textarea>
+                </div>
+
+                <div class="wrapper-time">
+                    <label for="time" class="lebel-time">Время отправки</label>
+                    <textarea class="time-hour" id="time" placeholder="Часы"></textarea>
+                    <div style="font-size: 28px;">:</div>
+                    <textarea class="time-min" id="time" placeholder="Минуты"></textarea><a
+                        href="#" class="green-block">Применить</a>
+                </div>
+
+            </div>
+
+            <div class="col-3 block-of-information">
+                <div class="name-block-one">Проверка наличия протокола Daily meeting</div>
+                <div class="wrapper-message">
+                    <label for="password1" class="label-message">Текст уведомления</label>
+                    <textarea class="message" id="password1" placeholder=""></textarea>
+                </div>
+
+                <div class="wrapper-time">
+                    <label for="time" class="lebel-time">Время отправки</label>
+                    <textarea class="time-hour" id="time" placeholder="Часы"></textarea>
+                    <div style="font-size: 28px;">:</div>
+                    <textarea class="time-min" id="time" placeholder="Минуты"></textarea><a
+                        href="#" class="green-block">Применить</a>
+                </div>
+
+            </div>
+
+            <div class="col-3 block-of-information">
+                <div class="name-block-one">Проверка наличия протокола Daily meeting</div>
+                <div class="wrapper-message">
+                    <label for="password1" class="label-message">Текст уведомления</label>
+                    <textarea class="message" id="password1" placeholder=""></textarea>
+                </div>
+
+                <div class="wrapper-time">
+                    <label for="time" class="lebel-time">Время отправки</label>
+                    <textarea class="time-hour" id="time" placeholder="Часы"></textarea>
+                    <div style="font-size: 28px;">:</div>
+                    <textarea class="time-min" id="time" placeholder="Минуты"></textarea><a
+                        href="Authentication/authentication.html" class="green-block">Применить</a>
+                </div>
+
+            </div>
+
+            <div class="col-3 block-of-information">
+                <div class="name-block-one">Проверка наличия протокола Daily meeting</div>
+                <div class="wrapper-message">
+                    <label for="password1" class="label-message">Текст уведомления</label>
+                    <textarea class="message" id="password1" placeholder=""></textarea>
+                </div>
+
+                <div class="wrapper-time">
+                    <label for="time" class="lebel-time">Время отправки</label>
+                    <textarea class="time-hour" id="time" placeholder="Часы"></textarea>
+                    <div style="font-size: 28px;">:</div>
+                    <textarea class="time-min" id="time" placeholder="Минуты"></textarea><a
+                        href="#" class="green-block">Применить</a>
+                </div>
+            </div>
+
+            <div class="knopka">
+                <button type="submit" class="data send_statistics">Отправить данные</button>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+<script src="{% static 'js/lib/jquery-3.1.1.min.js' %}"></script>
+{#<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>#}
+{##}
+{#<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"#}
+{#        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"#}
+{#        crossorigin="anonymous"></script>#}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+<script src="{% static 'import/js/api/server_redmine.js' %}" defer="defer"></script>
+
+<script src="{% static 'import/js/menu-gamburger.js' %}"></script>
+<script src="{% static 'import/js/api/main.js' %}" defer="defer"></script>
+<script src="{% static 'import/js/api/get_info.js' %}" defer="defer"></script>
+<script src="{% static 'js/lib/jquery.cookie.js' %}" defer="defer"></script>
+</body>
+
+</html>

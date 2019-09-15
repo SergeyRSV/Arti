@@ -1,0 +1,18 @@
+{% extends 'my_static/head.html' %}
+{% block content %}
+
+    <div class="card p-3 col-12 col-lg-5 col-xl-3  w-100 m-1">
+        <div>Вход</div>
+        <div class="form-group">
+
+                <input type="text" class="form-control login" placeholder="Логин" >
+
+                <input type="password" class="form-control password" placeholder="Пароль">
+
+        </div>
+        <button type="submit" class="form-control btn btn-primary col submit">Submit</button>
+
+    </div>
+    {% load staticfiles %}
+    <script src="{% static 'js/api/auth.js' %}" defer="defer"></script>
+{% endblock %}

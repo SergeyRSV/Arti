@@ -1,0 +1,139 @@
+{% extends 'my_static/head.html' %}
+{% block content %}
+    {% load staticfiles %}
+    <div>
+        <nav class="navbar navbar-dark bg-primary sticky-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarToggleExternalContent"
+                    aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <div class="navbar-brand">Информация о проекте</div>
+            </button>
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="p-4 btn-group-vertical">
+                    <h5 class="text-white h4">Выберите проект:</h5>
+                    <div id="projects">
+                        <button type="button" class="btn btn-primary">ArtiPM</button>
+                        <button type="button" class="btn btn-primary">Яндекс</button>
+                        <button type="button" class="btn btn-primary">Google</button>
+                        <button type="button" class="btn btn-primary">Microsoft</button>
+                    </div>
+                    <h5 class="text-white h4">Участники проекта ArtiPM:</h5>
+                    <div id="members">
+                        <div class="media p-1">
+                            <img src="{% static 'img/circle.svg' %}" class="mr-3 align-self-center rounded-circle"
+                                 alt="avatar">
+                            <div class="media-body mr-3 navbar-brand">
+                                <h5>Никита</h5>
+                                Product manager
+                            </div>
+                        </div>
+                        <div class="media p-1">
+                            <img src="{% static 'img/circle.svg' %}" class="mr-3 align-self-center rounded-circle"
+                                 alt="avatar">
+                            <div class="media-body mr-3 navbar-brand">
+                                <h5>Влад</h5>
+                                Developer
+                            </div>
+                        </div>
+                        <div class="media p-1">
+                            <img src="{% static 'img/circle.svg' %}" class="mr-3 align-self-center rounded-circle"
+                                 alt="avatar">
+                            <div class="media-body mr-3 navbar-brand">
+                                <h5>Дмитрий</h5>
+                                Developer
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center navbar-brand h1 mb-0">ArtiPM</div>
+
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle mr-5" type="button" id="dropdownMenu2"
+                        data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                    Личный кабинет
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
+                    <div class="media p-1">
+                        <img src="{% static 'img/circle.svg' %}" class="mr-3 align-self-center rounded-circle"
+                             alt="avatar">
+                        <div class="media-body mr-3 mb-0 badge">
+                            <h5 id="user">Никита Аникин</h5>
+                            Product manager
+                        </div>
+                        <button type="button" class="btn btn-info align-self-center exit">Выход</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="content-main p-3">
+
+        <div class="row flex-wrap justify-content-around container-fluid">
+
+            <div class="card p-3 col-12 col-lg-5 col-xl-3  w-100 m-1">
+                <div>Проверка наличия протокола Daily meeting</div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Текст уведомления </label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                </div>
+                <div class="row form-group w-100">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Часы">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Минуты">
+                    </div>
+                    <button type="submit" class="form-control btn btn-primary col">Submit</button>
+                </div>
+            </div>
+            <div class="card p-3 col-12 col-lg-5 col-xl-3  w-100 m-1">
+                <div>Проверка наличия протокола Daily meeting</div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea2">Текст уведомления </label>
+                    <textarea class="form-control" id="exampleFormControlTextarea2" rows="5"></textarea>
+                </div>
+                <div class="row form-group w-100">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Часы">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Минуты">
+                    </div>
+                    <button type="submit" class="form-control btn btn-primary col">Submit</button>
+                </div>
+            </div>
+            <div class="card p-3 col-12 col-lg-5 col-xl-3  w-100 m-1">
+                <div>Проверка наличия протокола Daily meeting</div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea3">Текст уведомления </label>
+                    <textarea class="form-control" id="exampleFormControlTextarea3" rows="5"></textarea>
+                </div>
+                <div class="row form-group w-100">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Часы">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Минуты">
+                    </div>
+                    <button type="submit" class="form-control btn btn-primary col">Submit</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="w-100 justify-content-center d-flex flex-row mt-3">
+            <button class="btn btn-success send_statistics">Выполнить выгрузку</button>
+
+        </div>
+
+
+    </div>
+    <script src="{% static 'js/api/main.js' %}" defer="defer"></script>
+    <script src="{% static 'js/api/get_info.js' %}" defer="defer"></script>
+
+{% endblock %}
